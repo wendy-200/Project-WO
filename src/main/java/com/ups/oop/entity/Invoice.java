@@ -21,7 +21,7 @@ public class Invoice {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private Date invoiceDate;
+    private Date invoice;
     private Double total;
-    private String paymentMethod;
+    private String customer;
 }
