@@ -25,10 +25,8 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String customerId;
-    private String firstName;
+    private String name;
     private String lastName;
-    private Integer age;
-    private Date registrationDate;
     private String address;
     private String phoneNumber;
     private String email;

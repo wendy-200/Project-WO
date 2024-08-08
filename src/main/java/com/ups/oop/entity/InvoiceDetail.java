@@ -18,7 +18,9 @@ public class InvoiceDetail {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    private String invoice;
+    private String productId;
     private Integer quantity;
-    private Double price;
-    private Invoice invoice;
+    private Double  unitPrice;
+    private Double  Subtitle;
 }
