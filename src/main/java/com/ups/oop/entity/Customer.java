@@ -10,7 +10,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
 
 
 @Entity
@@ -25,9 +24,11 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String customerId;
+    private String customerCode;
     private String name;
     private String lastName;
     private String address;
     private String phoneNumber;
     private String email;
+
 }
