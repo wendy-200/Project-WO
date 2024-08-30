@@ -21,7 +21,11 @@ public class Invoice {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    private String customername;
     private Date invoice;
     private Double total;
+    private Double Subtotal;
     private String customer;
+    private String date;
+
 }
