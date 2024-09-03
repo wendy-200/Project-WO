@@ -1,4 +1,4 @@
-package com.ups.oop.dto;
+package com.ups.oop.DTO;
 
 
 import lombok.*;
@@ -11,11 +11,10 @@ import lombok.*;
 
 public class CustomerDTO {
     private Long id;
-    private String CustomerCode;
     private String customername;
+    private String customerlastName;
     private String address;
     private String phoneNumber;
     private String email;
-
 
 }

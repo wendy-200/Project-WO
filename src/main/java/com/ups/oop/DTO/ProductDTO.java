@@ -1,4 +1,4 @@
-package com.ups.oop.dto;
+package com.ups.oop.DTO;
 
 
 import lombok.AllArgsConstructor;
@@ -11,11 +11,11 @@ import lombok.Setter;
 @Getter
 @Setter
 
-
 public class ProductDTO {
-    private Long id;
-    private String name;
-    private String provider;
-    private String description;
-    private double price;
+        private Long id;
+        private String name;
+        private String provider;
+        private String description;
+        private String price;
+
 }

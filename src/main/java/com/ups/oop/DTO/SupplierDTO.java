@@ -1,5 +1,4 @@
-package com.ups.oop.dto;
-
+package com.ups.oop.DTO;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,6 +15,4 @@ public class SupplierDTO {
     private String supplierAddress;
     private String phoneNumber;
     private String email;
-
-
 }
