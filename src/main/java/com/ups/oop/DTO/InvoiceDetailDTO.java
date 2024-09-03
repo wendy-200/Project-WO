@@ -1,4 +1,4 @@
-package com.ups.oop.dto;
+package com.ups.oop.DTO;
 
 
 import lombok.AllArgsConstructor;
@@ -11,11 +11,12 @@ import lombok.Setter;
 @Getter
 @Setter
 
+
 public class InvoiceDetailDTO {
     private Long id;
     private String invoice;
     private String productId;
-    private Integer quantity;
+    private String quantity;
     private Double unitPrice;
     private Double subTotal;
 

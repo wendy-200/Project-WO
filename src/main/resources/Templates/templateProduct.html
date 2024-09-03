@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title> Product List</title>
+    <style>
+        body{
+        background: #466cdb5c;
+        }
+        table, th, td{
+        border: 1px solid black;
+        border-collapse:collapse;
+        }
+
+        th {
+        padding: 10px;
+        width: 150px;
+        }
+
+        tr:first-child {
+        color:white;
+        background: #add8e6;
+        }
+
+        tr {
+          background-color: #70f58580;
+        }
+
+        tr:hover{
+          box-shadow:0px 2px 0px rgba(0,0,0,0.5);
+          cursor: pointer;
+          }
+
+        td {
+          padding:10px;
+        }
+    </style>
+</head>
+<body>
+<h2>List of product</h2>
+<br>
+<table>
+    <tr>
+        <th>id</th>
+        <th>Name</th>
+        <th>provider</th>
+        <th>descripcion</th>
+        <th>price</th>
+
+    </tr>
+    <tr th:each="p:${product}">
+        <th th:text="${p.Name}"></th>
+        <th th:text="${p.provider}"></th>
+        <th th:text="${p.descripcion}"></th>
+        <th th:text="${p.price}"></th>
+    </tr>
+</table>
+
+</body>
+</html>

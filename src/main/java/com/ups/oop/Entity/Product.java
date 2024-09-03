@@ -1,5 +1,4 @@
-package com.ups.oop.entity;
-
+package com.ups.oop.Entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,10 +18,9 @@ import lombok.Setter;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private String id;
     private String name;
     private String provider;
     private String description;
-    private double price;
-
+    private String price;
 }

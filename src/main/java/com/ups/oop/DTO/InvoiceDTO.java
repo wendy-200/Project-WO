@@ -1,4 +1,4 @@
-package com.ups.oop.dto;
+package com.ups.oop.DTO;
 
 
 import lombok.*;
@@ -8,10 +8,12 @@ import lombok.*;
 @ToString
 @Getter
 @Setter
-
 public class InvoiceDTO {
     private Long id;
-    private String customerName;
-    private String Date;
+    private String Name;
+    private String date;
     private Double totalAmount;
+    private String subtotal;
+
+
 }
