@@ -62,11 +62,11 @@ import java.util.Optional;
         }
 
         public ResponseEntity getProductById(Long id) {
-            Optional<Product> productOptional = productRepository.findById(Long.valueOf(id));
+            Optional<Product> productOptional = productRepository.findById(id);
             if(productOptional.isPresent()){
                 Product productFound = productOptional.get();
                 ProductDTO product = new ProductDTO();
-                product.setId(Long.valueOf(productFound.getId()));
+                product.setId((productFound.getId()));
                 product.setName(productFound.getName());
                 product.setProvider(productFound.getProvider());
                 product.setDescription(productFound.getDescription());

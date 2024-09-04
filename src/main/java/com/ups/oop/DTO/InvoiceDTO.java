@@ -9,10 +9,10 @@ import lombok.*;
 @Getter
 @Setter
 public class InvoiceDTO {
-    private Long id;
-    private String Name;
+    private String id;
+    private String name;
     private String date;
-    private Double totalAmount;
+    private String totalAmount;
     private String subtotal;
 
 
