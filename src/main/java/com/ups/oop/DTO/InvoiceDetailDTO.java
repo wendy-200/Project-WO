@@ -1,6 +1,8 @@
 package com.ups.oop.DTO;
 
 
+import com.ups.oop.Entity.Invoice;
+import com.ups.oop.Entity.Product;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,4 +22,12 @@ public class InvoiceDetailDTO {
     private Double unitPrice;
     private Double subTotal;
 
+
+    public InvoiceDetailDTO(
+            Long id,
+            Invoice invoice,
+            Product productId,
+            Integer quantity,
+            Double price) {
+    }
 }

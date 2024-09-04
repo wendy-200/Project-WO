@@ -24,9 +24,8 @@ public class Customer {
     private String address;
     private String phoneNumber;
     private String email;
-    @ManyToOne
+    @OneToMany
     @JoinColumn(name = "customer")
     private List<Invoice> invoice;
-
 
 }
